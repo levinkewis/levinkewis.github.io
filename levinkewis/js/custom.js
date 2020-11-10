@@ -1,17 +1,7 @@
-var modal = document.getElementById('myModal');
+$('.carousel').carousel()
 
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 
-img.onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function(){
-    modal.style.display = "none";
-}
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
