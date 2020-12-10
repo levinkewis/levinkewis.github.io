@@ -10,11 +10,13 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
+    <link rel="icon" href="img/profile/favicon.png" type="image/gif" sizes="16x16">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.css" rel="stylesheet">
@@ -26,10 +28,10 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Kevin Lewis Design</a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Levin Kewis</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
-                <i class="fas fa-bars"></i>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -43,7 +45,7 @@
                         <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -51,16 +53,20 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header id="masthead" class="masthead">
         <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center text-align-justify">
+            <div class="mx-auto w-100 text-center align-items-center text-align-justify">
                 <img src="img/logo/header_logo.png" height="300">
-                <h2 class="row links">
-                    <a href="illustration.html" class="col-sm-3">Illustration</a>
-                    <a href="graphic.html" class="col-sm-3">Graphic</a>
-                    <a href="3d.html" class="col-sm-3">3D</a>
-                    <a href="photography.html" class="col-sm-3">Photography</a>
-                </h2>
+
+                <div class="container">
+                    <div class="row links">
+                        <a href="illustration.html" class="col-lg-3">Illustration</a>
+                        <a href="graphic.html" class="col-lg-3">Graphic</a>
+                        <a href="3d.html" class="col-lg-3">3D</a>
+                        <a href="photography.html" class="col-lg-3">Photography</a>
+                    </div>
+                </div>
+
                 <div class="btnpadding">
                     <a href="#about" class="btn btn-primary js-scroll-trigger">About Me</a>
                 </div>
@@ -69,149 +75,153 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about-section text-center">
-        <div class="container j-flex h-100">
+    <div class="bg">
+        <section id="about" class="about-section text-center">
+            <div class="container j-flex h-100">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="text-white text-justify mb-4">Hey there!</h2>
+                        <p class="text-white-50 text-justify">
+                            Glad you can make it! My name is Kevin, I’m a graphic designer & illustrator who resides in Northwestern Ontario. I’m also a hobbyist photographer and 3D modeller. When it comes to design I like to break the rules; I’m experimental in that my color palettes don’t always compliment each other, they sometimes downright insult one another - but in the most visually pleasing way. <br>
+                            During my time in the Interactive Media Program (2018 - 2021), I’ve tried my hand at many other multimedia art forms such as web design, motion graphics, video and sound editing as well as visual effects. <br>
+                            Below you will find my IMD demo reel, my portfolio of design work from the past three years and my contact information with links to various social media platforms.
+                        </p>
+                        <h4 class="text-white-50 text-justify mb-4">Good luck and go wild - LK</h4>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/profile/face_portfolio.png" width="400" height="400">
+                    </div>
+                </div>
+            </div>
+            <div class="btnpadding">
+                <a href="#demo" class="btn btn-primary js-scroll-trigger">Demo Reel</a>
+            </div>
+        </section>
+
+        <!-- Demo Section -->
+        <section id="demo" class="demo-section text-center">
+            <div class="container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XvSDM8qgoTI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="portbtnpadding">
+                <a href="#portfolio" class="btn btn-primary js-scroll-trigger">Portfolio</a>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section text-center">
+            <div class="container">
+
+                <div class="row text-center portfolio">
+                    <h1 class="col text-white">Portfolio</h1>
+                </div>
+                <!-- graphic Design -->
+                <div class="row justify-content-center no-gutters">
+
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="thumbnail">
+                            <a href="graphic.html">
+                                <img class="img-fluid zoom" src="img/preview/square_thumb_1.jpg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="thumbnail">
+                            <a href="illustration.html">
+                                <img class="img-fluid zoom" src="img/preview/square_thumb_2.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="thumbnail">
+                            <a href="3d.html">
+                                <img class="img-fluid zoom" src="img/preview/square_thumb_3.jpg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="thumbnail">
+                            <a href="photography.html">
+                                <img class="img-fluid zoom" src="img/preview/square_thumb_4.jpg">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="btnpadding">
+                    <a href="#contact" class="btn btn-primary js-scroll-trigger">Contact</a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-black text-center">
+        <div class="text-center text-primary contact">
+            <h2>Contact</h2>
+        </div>
+
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="text-white mb-4">Who I Am</h2>
-                    <p class="text-white-50 text-justify">My name is Kevin and I reside in North-Western Ontario.</p>
-                    <h2 class="text-white mb-4">What I Do</h2>
-                    <p class="text-white-50 text-justify">I'm a graphic designer with a passion for illustration. I've also tried my hand at many different multimedia art forms such Motion Design, 3D Design and Web Design.<br>
-                        I'm also a hobbyist photographer with a fondness for landscapes, nature and nighttime.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/profile/face_portfolio.png" width="400" height="400">
-                </div>
-            </div>
-        </div>
-        <div class="btnpadding">
-            <a href="#demo" class="btn btn-primary js-scroll-trigger">Demo Reel</a>
-        </div>
-    </section>
-
-    <!-- Demo Section -->
-    <section id="demo" class="demo-section text-center">
-        <div class="container">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XvSDM8qgoTI" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="portbtnpadding">
-            <a href="#portfolio" class="btn btn-primary js-scroll-trigger">Portfolio</a>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-
-            <div class="row text-center portfolio">
-                <h1 class="col text-white">Porfolio</h1>
-            </div>
-            <!-- graphic Design -->
-            <div class="row justify-content-center no-gutters">
-
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="thumbnail">
-                        <a href="graphic.html">
-                            <img class="img-fluid" src="img/preview/square_thumb_1.jpg">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="thumbnail">
-                        <a href="illustration.html">
-                            <img class="img-fluid" src="img/preview/square_thumb_2.png">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="thumbnail">
-                        <a href="3d.html">
-                            <img class="img-fluid" src="img/preview/square_thumb_3.jpg">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="thumbnail">
-                        <a href="photography.html">
-                            <img class="img-fluid" src="img/preview/square_thumb_4.jpg">
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <!--
-   
-    <section id="signup" class="contact-section bg-black">
-        <div class="container">
-
-            <div class="row">
-
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Address</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">118 Frederica St W</div>
+                            <i class="fa fa-map-pin text-primary mb-2"></i>
+                            <hr class="my-4" />
+                            <h5 class=" m-0">Thunder Bay, ON</h5>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">
-                                <a href="#">levinkewis@gmail.com</a>
-                            </div>
+                            <i class="fa fa-envelope text-primary mb-2"></i>
+                            <hr class="my-4" />
+                            <h5 class="m-0"><a>levinkewis91@gmail.com</a></h5>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">+1 (555) 902-8832</div>
+                            <i class="fa fa-mobile text-primary mb-2"></i>
+                            <hr class="my-4" />
+                            <h5 class="text-uppercase m-0">+1 (807) 633-4721</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="social d-flex justify-content-center">
-                <a href="#" class="mx-2">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="mx-2">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="mx-2">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
+                <a class="mx-2" target="_blank" href="https://www.behance.net/kevin_lewi1ff5"><i class="fa fa-behance"></i></a>
 
+                <a class="mx-2" target="_blank" href="https://www.flickr.com/photos/142660847@N07/"><i class="fa fa-flickr"></i></a>
+
+                <a class="mx-2" target="_blank" href="https://www.instagram.com/levinkewis/"><i class="fa fa-instagram"></i></a>
+
+            </div>
         </div>
+
+        <div class="btnpadding">
+            <a href="#masthead" class="btn btn-primary js-scroll-trigger">Back to top</a>
+        </div>
+
     </section>
--->
+
+
+
 
     <footer class="bg-black small text-center text-white-50">
-        <div class="container">
-            Copyright &copy; Levin Kewis 2020
+        <div class="container text-align-justify">
+            Copyright &copy; Kevin Lewis 2020
         </div>
     </footer>
 
@@ -225,4 +235,6 @@
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
 
-</body></html>
+</body>
+
+</html>
