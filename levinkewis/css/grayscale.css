@@ -6,14 +6,14 @@
 
 #mainNav {
     min-height: 56px;
-    background-color: #ff8f0b;
+    background-color: #4f837f;
 }
 
 #mainNav .navbar-toggler {
-    font-size: 80%;
+    font-size: 100%;
     padding: 0.75rem;
-    color: #8064a1;
-    border: 1px solid #8064a1;
+    color: #ffff00;
+    border: 1px solid #ffff00;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -21,16 +21,14 @@
 }
 
 #mainNav .navbar-brand {
-    color: #ffffff;
     font-weight: 700;
-    padding: .9rem 0;
+    
 }
 
-#mainNav .navbar-nav .nav-item:hover {
-    color: fade(#fc8732, 80%);
-    outline: none;
-    background-color: transparent;
+.nav-link {
+    font-weight: 500;
 }
+
 
 #mainNav .navbar-nav .nav-item:active,
 #mainNav .navbar-nav .nav-item:focus {
@@ -60,16 +58,14 @@
         color: rgba(255, 255, 255, 0.5);
     }
 
-    #mainNav .nav-link:hover {
-        color: rgba(255, 157, 0, 0.75);
-    }
+    
 
     #mainNav .nav-link:active {
-        color: #ff7600;
+        color: #4f837f;
     }
 
     #mainNav.navbar-shrink {
-        background-color: #ff7600;
+        background-color: #4f837f;
     }
 
     #mainNav.navbar-shrink .navbar-brand {
@@ -83,17 +79,17 @@
     }
 
     #mainNav.navbar-shrink .nav-link:hover {
-        color: #08e3ff;
+        color: #ffff00;
     }
 
     #mainNav.navbar-shrink .nav-link:active {
-        color: #08e3ff;
+        color: #8064a1;
     }
 
     #mainNav.navbar-shrink .nav-link.active {
-        color: #08e3ff;
+        color: #ffff00;
         outline: none;
-        border-bottom: 0.25rem solid #08e3ff;
+        border-bottom: 0.25rem solid #ffff00;
     }
 }
 
@@ -112,55 +108,61 @@
 }
 
 
-
-@media (min-width: 768px) {
-    .masthead h2 {
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .masthead {
-        height: 100vh;
-        padding: 0;
-    }
-
-    .masthead h1 {
-        font-size: 6.5rem;
-        line-height: 6.5rem;
-        letter-spacing: 0.8rem;
-    }
-
-    .masthead h2 {
-        max-width: 30rem;
-        font-size: 1.25rem;
-    }
+.links{
+    padding-top: 3rem;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 
-@media only screen and (min-width: 900px) {
-    img #optional {
+@media only screen and (max-width: 900px) {
+    .proj-img {
         display: none;
     }
+}
+
+
+.bg {
+    background: linear-gradient(#3b2c43, #15294a);
 }
 
 .about-section {
     padding-top: 10rem;
     padding-bottom: 20rem;
-    background: linear-gradient(#3b2c43, #15294a);
+    
 }
 
 .demo-section {
     padding-top: 5rem;
     padding-bottom: 20rem;
-    background: linear-gradient(#15294a, #193f65);
+   
+}
+.portfolio-section {
+    padding-top: 5rem;
+    padding-bottom: 20em;
 }
 
-.portfolio-section {
-    padding-top: 10rem;
-    padding-bottom: 20em;
-    background: linear-gradient(#193f65, #616d7e);
+.contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+
+
+.contact-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #616d7e;
 }
 
 .background {
@@ -171,12 +173,22 @@
 
 .project-about {
     background: #3b2c43;
-    padding-top: 10rem;
+    padding-top: 20rem;
     padding-bottom: 10rem;
 }
 
+.social {
+    padding-top: 5rem;
+}
 
+.proj-img {
+    text-align: center;
+    width: 100%;
+}
 
+.project-btn {
+    padding-top: 5rem;
+}
 
 .btn {
     -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
@@ -187,10 +199,11 @@
     text-transform: uppercase;
     letter-spacing: .15rem;
     border: 0;
+    
 }
 
 .btnpadding {
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 .portbtnpadding {
@@ -234,9 +247,18 @@ a {
 a:focus,
 a:hover {
     text-decoration: none;
-    color: #3c6360;
+    color: #ffff00;
 }
 
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
 
 
 .bg-black {
@@ -261,3 +283,13 @@ footer {
     object-fit: cover;
     object-position: center;
 }
+
+.text-white{
+    font-style: italic;
+    
+}
+
+.h4 {
+    font-style: italic;
+}
+
